@@ -39,10 +39,10 @@ sudo -u postgres sh /vagrant/provision/postgres/init.sh
 sudo apt-get -y install nodejs
 
 # Install npm packages
-sudo npm install --silent -g yarn
+sudo npm install --silent -g yarn @vue/cli
 
 # Install app
 cd /var/www/akane.loc
-mkdir runtime -m 777 -p
+chmod -R 777 backend/runtime
 chmod 777 update.sh
 sh update.sh dev
