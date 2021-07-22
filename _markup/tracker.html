@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Трекер</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-light">
+<div class="container">
+    <h1 class="display-6">Трекер</h1>
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="row mb-3 gy-3">
+                <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="Задача">
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Ссылка">
+                        <span class="input-group-text"><i class="bi-link"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-3">
+                <div class="col-lg-4 col-md-5">
+                    <select class="form-select">
+                        <option selected>Без проекта</option>
+                        <optgroup label="OOOGR">
+                            <option value="1">OOOGR</option>
+                        </optgroup>
+                        <optgroup label="BlackCyberCat">
+                            <option value="2">IGM</option>
+                            <option value="3">POCO</option>
+                        </optgroup>
+                        <optgroup label="GreenRabbit">
+                            <option value="2">QmStatus</option>
+                            <option value="3">ProPetrovich</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Дата">
+                        <span class="input-group-text"><i class="bi-calendar3"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <div class=" input-group">
+                        <input type="text" class="form-control " placeholder="Продолжительность">
+                        <span class="input-group-text"><i class="bi-stopwatch"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 d-grid">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <table class="table table-borderless">
+                <tbody>
+                <tr class="lead border-bottom">
+                    <td colspan="2">
+                        Сегодня
+                    </td>
+                    <td>21:12</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Программирование функционала по чек-ину и листу ожидания</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR<small class="text-muted">/OOOGR</small></span>
+                    </td>
+                    <td class="text-end">04:12</td>
+                </tr>
+                <tr>
+                    <td>Разобраться с запуском первой итерации</td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-primary p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">IGM</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">01:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Публичная страница. Выгрузить фикс на турнир по ограничению ввода символов для наименования команды</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">2:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Сделать что-нибудь нужное</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-success p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">QmStatus</span><small class="text-muted">/GreenRabbit</small>
+                    </td>
+                    <td class="text-end">12:50</td>
+                </tr>
+                <tr >
+                    <td></td>
+                </tr>
+                <tr class="lead border-bottom">
+                    <td colspan="2">
+                        Вчера
+                    </td>
+                    <td>21:12</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Программирование функционала по чек-ину и листу ожидания</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR<small class="text-muted">/OOOGR</small></span>
+                    </td>
+                    <td class="text-end">04:12</td>
+                </tr>
+                <tr>
+                    <td>Разобраться с запуском первой итерации</td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-primary p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">IGM</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">01:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Публичная страница. Выгрузить фикс на турнир по ограничению ввода символов для наименования команды</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">2:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Сделать что-нибудь нужное</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-success p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">QmStatus</span><small class="text-muted">/GreenRabbit</small>
+                    </td>
+                    <td class="text-end">12:50</td>
+                </tr>
+                <tr class="lead border-bottom">
+                    <td colspan="2">
+                        12 дек, 2021
+                        <small class="text-muted">Чт</small>
+                    </td>
+                    <td>21:12</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Программирование функционала по чек-ину и листу ожидания</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR<small class="text-muted">/OOOGR</small></span>
+                    </td>
+                    <td class="text-end">04:12</td>
+                </tr>
+                <tr>
+                    <td>Разобраться с запуском первой итерации</td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-primary p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">IGM</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">01:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Публичная страница. Выгрузить фикс на турнир по ограничению ввода символов для наименования команды</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">2:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Сделать что-нибудь нужное</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-success p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">QmStatus</span><small class="text-muted">/GreenRabbit</small>
+                    </td>
+                    <td class="text-end">12:50</td>
+                </tr>
+                <tr class="lead border-bottom">
+                    <td colspan="2">
+                        11 дек, 2021
+                        <small class="text-muted">Ср</small>
+                    </td>
+                    <td>21:12</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Программирование функционала по чек-ину и листу ожидания</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR<small class="text-muted">/OOOGR</small></span>
+                    </td>
+                    <td class="text-end">04:12</td>
+                </tr>
+                <tr>
+                    <td>Разобраться с запуском первой итерации</td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-primary p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">IGM</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">01:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Турниры. Публичная страница. Выгрузить фикс на турнир по ограничению ввода символов для наименования команды</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-danger p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">OOOGR</span><small class="text-muted">/BlackCyberCat</small>
+                    </td>
+                    <td class="text-end">2:00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://trello.com" target="_blank">Сделать что-нибудь нужное</a>
+                    </td>
+                    <td style="white-space: nowrap">
+                        <span class="badge rounded-circle bg-success p-1 "><span class="visually-hidden">&nbsp;</span></span>
+                        <span style="vertical-align: center">QmStatus</span><small class="text-muted">/GreenRabbit</small>
+                    </td>
+                    <td class="text-end">12:50</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+            <span class="btn btn-outline-primary">Загрузить еще</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

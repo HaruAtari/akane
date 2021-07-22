@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Отчет</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-light">
+<div class="container">
+    <h1 class="display-6">Отчет</h1>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="row mb-3 gy-3">
+                <div class="col-md-6">
+                    <label class="form-label">Поля </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="user" checked>
+                        <label class="form-check-label" for="name">Пользователь</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="name" checked>
+                        <label class="form-check-label" for="name">Название задачи</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="url">
+                        <label class="form-check-label" for="url">Ссылка</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="project" checked>
+                        <label class="form-check-label" for="project">Проект</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="company">
+                        <label class="form-check-label" for="company">Компания</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="duration" checked>
+                        <label class="form-check-label" for="url">Продолжительность</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="rate" checked>
+                        <label class="form-check-label" for="rate">Цена часа</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="price" checked>
+                        <label class="form-check-label" for="price">Итоговая цена</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Проекты</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="ooogr" checked>
+                        <label class="form-check-label" for="ooogr">OOOGR<small class="text-muted"> / OOOGR</small></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="bcc">
+                        <label class="form-check-label" for="bcc">POCO<small class="text-muted"> / BlackCyberCat</small></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="igm" checked>
+                        <label class="form-check-label" for="igm">IGM<small class="text-muted"> / BlackCyberCat</small></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="spp" checked>
+                        <label class="form-check-label" for="spp">QmStatus<small class="text-muted"> / GraanRabbit</small></label>
+                    </div>
+                </div>
+            </div>
+            <hr class="">
+            <div class="row mb-3 gy-3">
+<!--                <div class="d-sm-block d-md-none">-->
+<!--                    <hr class="my-0">-->
+<!--                </div>-->
+
+                <div class="col-md-6">
+                    <label class="form-label">Группировака</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="group-none" >
+                        <label class="form-check-label" for="group-none">Не группировать</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="group-2" checked>
+                        <label class="form-check-label" for="group-2">По пользователям</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="group-1" >
+                        <label class="form-check-label" for="group-1">По проектам</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="group-3">
+                        <label class="form-check-label" for="group-3">По компаниям</label>
+                    </div>
+                    <label class="form-label">Сортировка</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="sort-1" checked>
+                        <label class="form-check-label" for="sort-1">Пользователь, проект, задача</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="sort-2">
+                        <label class="form-check-label" for="sort-2">Проект, пользователь, задача</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="sort-3">
+                        <label class="form-check-label" for="sort-3">Проект, задача, пользователь</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="use-links" checked>
+                        <label class="form-check-label" for="use-links">Использовать ссылки в качестве названий задач (Если таковая указана)</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="use-clickable-links">
+                        <label class="form-check-label" for="use-clickable-links">Использовать кликабельные ссылки</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="use-decimal-duration">
+                        <label class="form-check-label" for="use-decimal-duration">Выводить время в виде дробного числа</label>
+                    </div>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Не округлять время</option>
+                        <option value="1">Округлять ввех до 10 минут</option>
+                        <option value="1">Округлять до ближайших 10 минут</option>
+                        <option value="1">Округлять вниз до 10 минут</option>
+                        <option value="1">Округлять ввех до 15 минут</option>
+                        <option value="1">Округлять до ближайших 15 минут</option>
+                        <option value="1">Округлять вниз до 15 минут</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row justify-content-between gy-3">
+                <div class="col-md-auto">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="С">
+                        <span class="input-group-text"><i class="bi-calendar3"></i></span>
+                        <div class="px-2">
+                            <span style="vertical-align: middle">—</span>
+                        </div>
+                        <input type="text" class="form-control " placeholder="По">
+                        <span class="input-group-text"><i class="bi-calendar3"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-auto d-grid">
+                    <button class="btn btn-primary">Сформировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table mb-5">
+                    <thead>
+                    <tr>
+                        <th>Пользователь</th>
+                        <th>Задача</th>
+                        <th>Проект</th>
+                        <th>Продолжительность</th>
+                        <th>Цена часа</th>
+                        <th>Итоговая цена</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Владимир Жириновский</td>
+                        <td><a href="">Турниры. Программирование функционала по чек-ину и листу ожидания</a></td>
+                        <td>OOOGR</td>
+                        <td>21:00</td>
+                        <td>100</td>
+                        <td>2 100</td>
+                    </tr>
+                    <tr>
+                        <td>Владимир Жириновский</td>
+                        <td><a href="">Сделать что-нибудь нужное</a></td>
+                        <td>QmStatus</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Владимир Жириновский</td>
+                        <td><a href="">Разобраться с запуском первой итерации</a></td>
+                        <td>IGM</td>
+                        <td>10</td>
+                        <td>100</td>
+                        <td>1 000</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr style="font-weight: bold">
+                        <td>Владимир Жириновский</td>
+                        <td></td>
+                        <td></td>
+                        <td>32:00</td>
+                        <td></td>
+                        <td>3 200</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table  mb-5">
+                    <thead>
+                    <tr>
+                        <th>Пользователь</th>
+                        <th>Задача</th>
+                        <th>Проект</th>
+                        <th>Продолжительность</th>
+                        <th>Цена часа</th>
+                        <th>Итоговая цена</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Герберт Уэллс</td>
+                        <td><a href="">Сделать что-нибудь нужное</a></td>
+                        <td>QmStatus</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Герберт Уэллс</td>
+                        <td><a href="">Турниры. Программирование функционала по чек-ину и листу ожидания</a></td>
+                        <td>OOOGR</td>
+                        <td>21:00</td>
+                        <td>100</td>
+                        <td>2 100</td>
+                    </tr>
+                    <tr>
+                        <td>Герберт Уэллс</td>
+                        <td><a href="">Разобраться с запуском первой итерации</a></td>
+                        <td>IGM</td>
+                        <td>10</td>
+                        <td>100</td>
+                        <td>1 000</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr style="font-weight: bold">
+                        <td>Герберт Уэллс</td>
+                        <td></td>
+                        <td></td>
+                        <td>32:00</td>
+                        <td></td>
+                        <td>3 200</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Пользователь</th>
+                        <th>Задача</th>
+                        <th>Проект</th>
+                        <th>Продолжительность</th>
+                        <th>Цена часа</th>
+                        <th>Итоговая цена</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Лео Марачиоли</td>
+                        <td><a href="">Разобраться с запуском первой итерации</a></td>
+                        <td>IGM</td>
+                        <td>10</td>
+                        <td>1 000</td>
+                        <td>10 000</td>
+                    </tr>
+                    <tr>
+                        <td>Лео Марачиоли</td>
+                        <td><a href="">Турниры. Программирование функционала по чек-ину и листу ожидания</a></td>
+                        <td>OOOGR</td>
+                        <td>21:00</td>
+                        <td>1 000</td>
+                        <td>21 000</td>
+                    </tr>
+                    <tr>
+                        <td>Лео Марачиоли</td>
+                        <td><a href="">Сделать что-нибудь нужное</a></td>
+                        <td>QmStatus</td>
+                        <td>1</td>
+                        <td>1 000</td>
+                        <td>1 000</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr style="font-weight: bold">
+                        <td>Лео Марачиоли</td>
+                        <td></td>
+                        <td></td>
+                        <td>32:00</td>
+                        <td></td>
+                        <td>32 000</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
